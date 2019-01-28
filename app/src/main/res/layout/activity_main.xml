@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent">
 
-    <TextView
+    <Button
+        android:id="@+id/changeLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:editable="false"
+        android:text="language" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeLanguage"
+        android:layout_centerHorizontal="true"
+        android:text="Edit" />
+
+    <ImageView
+        android:id="@+id/whatNow"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/edit"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/whatnow" />
+
+
+</RelativeLayout>

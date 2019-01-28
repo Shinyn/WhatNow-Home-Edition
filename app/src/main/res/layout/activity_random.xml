@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/youShould"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="60dp"
+        android:text="YOU SHOULD:" />
+
+    <TextView
+        android:id="@+id/suggestedActivity"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/youShould"
+        />
+
+    <TextView
+        android:id="@+id/with"
+        android:text="WITH"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/suggestedActivity"
+        />
+
+    <TextView
+        android:id="@+id/participants"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/with"
+        />
+
+    <TextView
+        android:id="@+id/forDuration"
+        android:text="FOR"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/participants"
+        />
+
+    <TextView
+        android:id="@+id/actualDuration"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@id/forDuration"
+        />
+
+    <ImageView
+        android:id="@+id/whatNow"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/actualDuration"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/whatnow" />
+
+
+
+</RelativeLayout>
