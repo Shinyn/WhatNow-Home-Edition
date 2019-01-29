@@ -1,5 +1,6 @@
 package com.example.matti.whatnow;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView whatNow;
     Intent intent;
-    Activity userActivity = new Activity();
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         intent = new Intent(this, RandomActivity.class);
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 int action = event.getActionMasked();
                 switch (action) {
                     case (MotionEvent.ACTION_UP) :
-                    userActivity.generate();
+                    startActivity(intent);
                 return true;
                     case (MotionEvent.ACTION_DOWN) :
                         return true;
@@ -41,10 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Activity newActivity = new Activity("bowl", "sunday", "jeff");
-//        addToList(newActivity);
-//        Activity newActivity2 = new Activity("plow", "2 hours", "you mom");
-//        addToList(newActivity2);
 
 //        Button button = (Button) findViewById(R.id.edit);
 //        button.setOnClickListener(new View.OnClickListener() {
@@ -60,13 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    public void addToList(Activity activityToAdd) {
-//        activitySuggestion.add(activityToAdd);
-//    }
+
 //
-//    public Activity readFromList() {
+//    public StuffToDo readFromList() {
 //        int index = randomizer.nextInt(activitySuggestion.size());
-//        Activity item = activitySuggestion.get(index);
+//        StuffToDo item = activitySuggestion.get(index);
 //        System.out.println("You should " + item.getName() + " with " + item.getParticipants() +
 //                " for " + item.getDuration());
 //        return item;
