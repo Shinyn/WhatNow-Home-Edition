@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)
         intent = new Intent(this, RandomActivity.class);
         whatNow = findViewById(R.id.whatNow);
         whatNow.setImageResource(R.drawable.whatnow);
