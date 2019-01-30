@@ -3,8 +3,8 @@
 
     <gradient
         android:startColor="@color/hazeYellow"
-        android:endColor="@color/rust"
-        android:centerX="@android:integer/config_longAnimTime">
+        android:endColor="@color/rust">
+        <!-- android:centerX="@android:integer/config_longAnimTime"> -->
 
     </gradient>
 

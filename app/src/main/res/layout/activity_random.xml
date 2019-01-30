@@ -1,67 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:background="@drawable/background_color"
+    >
 
     <TextView
         android:id="@+id/youShould"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="false"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="60dp"
-        android:text="YOU SHOULD:" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/textColor"
+        android:text="YOU SHOULD:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/suggestedActivity"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="130dp"
         android:layout_below="@id/youShould"
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youShould" />
 
     <TextView
         android:id="@+id/with"
-        android:text="WITH"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="130dp"
         android:layout_below="@id/suggestedActivity"
-        />
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textColor"
+        android:text="WITH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestedActivity" />
 
     <TextView
         android:id="@+id/participants"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="130dp"
         android:layout_below="@id/with"
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with" />
 
     <TextView
         android:id="@+id/forDuration"
-        android:text="FOR"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="130dp"
         android:layout_below="@id/participants"
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/textColor"
+        android:text="FOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/participants" />
 
     <TextView
         android:id="@+id/actualDuration"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="130dp"
         android:layout_below="@id/forDuration"
-        />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forDuration" />
 
     <ImageView
         android:id="@+id/whatNow"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/actualDuration"
-        android:layout_marginLeft="130dp"
-        android:src="@drawable/whatnow" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/whatnow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actualDuration"
+        app:layout_constraintVertical_bias="0.20999998" />
 
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/changeLanguage" />
 
-     Testar med en button istället då jag inte får bilden att bli rund.
+
     <ImageView
         android:id="@+id/whatNow"
         android:layout_width="180dp"

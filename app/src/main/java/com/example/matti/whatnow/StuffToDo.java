@@ -36,6 +36,7 @@ public class StuffToDo {
         participantsSuggestion.add("YOUR MOTHERS FIRST-BORN");
         participantsSuggestion.add("5 PEOPLE OF YOUR CHOICE");
         participantsSuggestion.add("A DECK OF CARDS AND NOTHING ELSE");
+        participantsSuggestion.add("WITH ANY LIVING THING, WHEATHER IT IS A HUMAN, PLANT OR ANIMAL");
         durationSuggestion.add("1 HOUR");
         durationSuggestion.add("2 MINUTES");
         durationSuggestion.add("A WEEK");
@@ -56,6 +57,7 @@ public class StuffToDo {
         durationSuggestion.add("1 DECADE");
         durationSuggestion.add("AS MANY DAYS AS AMOUNT OF WEEKS IT WAS SINCE THE LATEST RECESSION");
         durationSuggestion.add("420 MINUTES AND 69 SECONDS");
+        durationSuggestion.add("AS LONG AS YOU LIKE");
         nameSuggestion.add("BOWL");
         nameSuggestion.add("HIKE");
         nameSuggestion.add("GET WASTED");
@@ -76,6 +78,7 @@ public class StuffToDo {
         nameSuggestion.add("DRINK MORE WATER");
         nameSuggestion.add("DEVELOP AND UNDERSTANDING FOR CHEESE");
         nameSuggestion.add("RIDE A HORSE THROUGH AN EMPTY BEACH");
+        nameSuggestion.add("RUN LIKE YOUR LIFE DEPENDED ON IT");
 
     }
 
