@@ -2,9 +2,9 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
     <gradient
-        android:startColor="#A73D1C"
-        android:angle="360"
-        android:endColor="#A57EBE">
+        android:startColor="#10680D"
+        android:angle="180"
+        android:endColor="#03434B">
     </gradient>
 
     <corners
@@ -21,6 +21,7 @@
         android:right="5dp">
     </padding>
 
-    <solid android:color="#746919"></solid>
+    <!-- <solid android:color="#746919"></solid>  Denna overridar gradient.
+    Förmodligen för att den kommer efteråt som i html/css -->
 
 </shape>

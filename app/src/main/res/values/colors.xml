@@ -4,8 +4,9 @@
     <color name="rust">#A03E04</color>
     <color name="hazeYellow">#839407</color>
     <color name="blue">#1111C0</color>
-
+    <color name="white">#FFFFFF</color>
     <color name="colorPrimary">#122222</color>
     <color name="colorPrimaryDark">#000</color>
     <color name="colorAccent">#111</color>
+    <color name="textColor">#03F503</color>
 </resources>

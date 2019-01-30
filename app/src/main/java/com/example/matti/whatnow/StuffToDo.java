@@ -18,7 +18,7 @@ public class StuffToDo {
     public StuffToDo() {
         participantsSuggestion.add("YOUR HOPES AND DREAMS");
         participantsSuggestion.add("YOUR MOM");
-        participantsSuggestion.add("ALONE");
+        participantsSuggestion.add("NO ONE");
         participantsSuggestion.add("YOUR BEST FRIEND");
         participantsSuggestion.add("A RANDOM HOBO");
         participantsSuggestion.add("A COPY OF THE BIBLE");
@@ -34,7 +34,7 @@ public class StuffToDo {
         participantsSuggestion.add("A CACTUS");
         participantsSuggestion.add("2 BOTTLES OF VODKA");
         participantsSuggestion.add("YOUR MOTHERS FIRST-BORN");
-        participantsSuggestion.add("A 5 PEOPLE OF YOUR CHOICE");
+        participantsSuggestion.add("5 PEOPLE OF YOUR CHOICE");
         participantsSuggestion.add("A DECK OF CARDS AND NOTHING ELSE");
         durationSuggestion.add("1 HOUR");
         durationSuggestion.add("2 MINUTES");
