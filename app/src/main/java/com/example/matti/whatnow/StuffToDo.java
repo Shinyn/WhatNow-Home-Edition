@@ -1,6 +1,8 @@
 package com.example.matti.whatnow;
 
 
+import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -10,13 +12,14 @@ public class StuffToDo {
     private ArrayList<String> durationSuggestion = new ArrayList<>();
     private ArrayList<String> participantsSuggestion = new ArrayList<>();
 
+
     private Random randomizer = new Random();
     private String name;
     private String duration;
     private String participants;
 
-    public StuffToDo() {
-        participantsSuggestion.add("YOUR HOPES AND DREAMS");
+    public StuffToDo(Context c ) {
+        participantsSuggestion.add(c.getString(R.string.hopes_dreams));
         participantsSuggestion.add("YOUR MOM");
         participantsSuggestion.add("NO ONE");
         participantsSuggestion.add("YOUR BEST FRIEND");
@@ -36,7 +39,7 @@ public class StuffToDo {
         participantsSuggestion.add("YOUR MOTHERS FIRST-BORN");
         participantsSuggestion.add("5 PEOPLE OF YOUR CHOICE");
         participantsSuggestion.add("A DECK OF CARDS AND NOTHING ELSE");
-        participantsSuggestion.add("WITH ANY LIVING THING, WHEATHER IT IS A HUMAN, PLANT OR ANIMAL");
+        participantsSuggestion.add("WITH ANY LIVING THING, WHETHER IT IS A HUMAN, PLANT OR ANIMAL");
         durationSuggestion.add("1 HOUR");
         durationSuggestion.add("2 MINUTES");
         durationSuggestion.add("A WEEK");

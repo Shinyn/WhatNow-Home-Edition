@@ -6,12 +6,13 @@ import android.widget.TextView;
 
 public class RandomActivity extends AppCompatActivity {
 
-    StuffToDo userStuffToDo = new StuffToDo();
+    StuffToDo userStuffToDo;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        userStuffToDo = new StuffToDo(this);
         setContentView(R.layout.activity_random);
 
 
