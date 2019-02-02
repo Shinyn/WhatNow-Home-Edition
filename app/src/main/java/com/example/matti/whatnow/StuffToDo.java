@@ -79,7 +79,7 @@ public class StuffToDo {
         nameSuggestion.add("LEARN TO JUGGLE");
         nameSuggestion.add("LEARN A NEW LANGUAGE");
         nameSuggestion.add("DRINK MORE WATER");
-        nameSuggestion.add("DEVELOP AND UNDERSTANDING FOR CHEESE");
+        nameSuggestion.add("DEVELOP AN UNDERSTANDING FOR CHEESE");
         nameSuggestion.add("RIDE A HORSE THROUGH AN EMPTY BEACH");
         nameSuggestion.add("RUN LIKE YOUR LIFE DEPENDED ON IT");
 
