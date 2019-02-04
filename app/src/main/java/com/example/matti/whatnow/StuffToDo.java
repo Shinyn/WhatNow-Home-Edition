@@ -18,6 +18,8 @@ public class StuffToDo {
     private String duration;
     private String participants;
 
+    public StuffToDo() {}
+
     public StuffToDo(Context c ) {
         participantsSuggestion.add(c.getString(R.string.hopes_dreams));
         participantsSuggestion.add("YOUR MOM");

@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class RandomActivity extends AppCompatActivity {
 
-    StuffToDo userStuffToDo;
+    public StuffToDo userStuffToDo;
 
 
     @Override
