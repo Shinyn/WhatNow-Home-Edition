@@ -5,6 +5,9 @@
     <string name="you_should">DU BORDE:</string>
     <string name="with">MED:</string>
     <string name="for_">I:</string>
+    <string name="what_now_button">Vad Nu?</string>
+    <string name="edit_button">Redigera Aktiviteter</string>
+    <string name="language_shift">Engelska</string>
 
     <!-- Aktivity Suggestions -->
     <string name="hopes_dreams">DITT HOPP OCH DINA DRÖMMAR</string>
