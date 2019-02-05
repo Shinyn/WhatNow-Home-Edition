@@ -36,7 +36,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/button_shape"
-        android:onClick="removeActivity"
+        android:onClick="removeNameActivity"
         android:text="Remove Activity"
         android:textColor="@color/textColor"
         app:layout_constraintEnd_toEndOf="parent"

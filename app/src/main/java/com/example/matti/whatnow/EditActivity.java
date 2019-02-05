@@ -5,7 +5,9 @@ import android.os.Bundle;
 
 public class EditActivity extends AppCompatActivity {
 
-    StuffToDo userInput = new StuffToDo();
+    //StuffToDo userInput = new StuffToDo();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,11 +17,9 @@ public class EditActivity extends AppCompatActivity {
 
 
 
-
-
-
-
     }
+
+    /*
 
     public void addName(String userNameSuggestion) {
         userInput.addNameSuggestion(userNameSuggestion);
@@ -33,7 +33,9 @@ public class EditActivity extends AppCompatActivity {
         userInput.addDurationSuggestion(userDurationSuggestion);
     }
 
-    public void removeActivity() {
-
-    }
+    public void removeNameActivity() {
+        for (int i = 0; i < userInput.getNameSuggestion().size(); i++);
+        userInput.getName();
+        //Loopa igenom listan och skriva ut innehållet till ListView
+    } */
 }
