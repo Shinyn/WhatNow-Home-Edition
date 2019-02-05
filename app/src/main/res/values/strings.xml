@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">WhatNow</string>
+
+    <!-- Aktivity Suggestions -->
     <string name="hopes_dreams">YOUR HOPES AND DREAMS</string>
     <string name="your_mom">YOUR MOM</string>
     <string name="no_one">NO ONE</string>
@@ -37,40 +39,81 @@
     <string name="three_d_printer">A COPY OF THE FIRST 3D-PRINTER</string>
     <string name="town_drunk">THE TOWN DRUNK</string>
     <string name="elvis_impersonator">AN ELVIS IMPERSONATOR</string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
-    <string name=""></string>
+
+    <!-- Duration Suggestions -->
+    <string name="one_hour">1 HOUR</string>
+    <string name="two_minutes">TWO MINUTES</string>
+    <string name="week">A WEEK</string>
+    <string name="grow_mustache">HOWEVER LONG IT TAKES TO GROW A MUSTACHE</string>
+    <string name="rest_of_day">THE REST OF THE DAY</string>
+    <string name="solid_nineteen_half">A SOLID 19 AND A HALF SECONDS</string>
+    <string name="cook_ostridge">THE AMOUNT OF TIME IT TAKES TO COOK AN OSTRIDGE</string>
+    <string name="nano_seconds">3^23 NANO-SECONDS</string>
+    <string name="pull_ups">AS LONG AS IT TAKES YOU TO FINISH 10 PULL-UPS</string>
+    <string name="four_bank_days">4 BANK-DAYS</string>
+    <string name="forty_eight_min">A GOOD 48 MINUTES</string>
+    <string name="sixteen_hours">ABOUT 16 HOURS</string>
+    <string name="rest_of_life">THE REST OF YOUR LIFE</string>
+    <string name="months_days_hours">2 MONTHS, 15 DAYS AND 3 HOURS</string>
+    <string name="as_long_as_like">AS LONG AS YOU WOULD LIKE</string>
+    <string name="last_week_june">THE LAST WEEK OF JUNE</string>
+    <string name="two_half_years">2 AND A HALF YEARS</string>
+    <string name="one_decade">1 DECADE</string>
+    <string name="days_weeks_xmas">AS MANY DAYS AS AMOUNT OF WEEKS IT WAS SINCE X-MAS</string>
+    <string name="forty_two_min_sec">42 MINUTES AND 9 SECONDS</string>
+    <string name="long_want">AS LONG AS YOU WANT</string>
+    <string name="very_long_time">A VERY LONG TIME</string>
+    <string name="fifteen_min">15 MINUTES</string>
+    <string name="half_hour">HALF AN HOUR</string>
+    <string name="whole_hour">A WHOLE HOUR</string>
+    <string name="three_quarters_hours">THREE QUARTERS OF TWO HOURS</string>
+    <string name="sixteen_twenty_seven">16*27 MINUTES</string>
+    <string name="rest_of_week">THE REST OF THE WEEK</string>
+    <string name="seventy_two_hours">72 HOURS</string>
+    <string name="youtube_video_load">THE TIME IT TAKES FOR YOUR YOUTUBE-VIDEO TO LOAD</string>
+    <string name="tv_commercial">THE LENGTH OF A TV-COMMERCIAL</string>
+    <string name="two_hours_nine_min">2 HOURS AND 9 MINUTES</string>
+    <string name="eleven_leap_years">11 OF THOSE LEAP-YEARS</string>
+    <string name="min_teeth_mouth">AS MANY MINUTES AS YOU HAVE TEETH IN YOUR MOUTH</string>
+    <string name="toilet_session">A TOILET SESSION</string>
+
+    <!-- Participants Suggestions -->
+
+    <string name="bowl">BOWL</string>
+    <string name="hike">HIKE</string>
+    <string name="juggle">JUGGLE</string>
+    <string name="throw_darts">THROW DARTS</string>
+    <string name="work_out">WORK OUT</string>
+    <string name="play_ping_pong">PLAY PING PONG</string>
+    <string name="tennis">TENNIS</string>
+    <string name="soccer">SOCCER</string>
+    <string name="video_games">VIDEO GAMES</string>
+    <string name="do_cardio">DO CARDIO</string>
+    <string name="cook">COOK</string>
+    <string name="help_a_friend">HELP A FRIEND</string>
+    <string name="donate_to_charity">DONATE TO CHARITY</string>
+    <string name="share_wisdom">SHARE YOUR WISDOM</string>
+    <string name="gather_intelligence">GATHER INTELLIGENCE</string>
+    <string name="lower_expectations">LOWER YOUR EXPECTATIONS</string>
+    <string name="watch_infinity_war">WATCH INFINITY WAR</string>
+    <string name="get_wasted">GET WASTED</string>
+    <string name="scream_nursing_home">SCREAM INTO A NURSING HOME</string>
+    <string name="learn_juggle">LEARN TO JUGGLE</string>
+    <string name="undermine_father_wisdom">UNDERMINE YOUR FATHERS WISDOM</string>
+    <string name="go_witch_hunt">GO ON A WITCH-HUNT</string>
+    <string name="visit_old_tomb">VISIT AN OLD MANS TOMB</string>
+    <string name="go_to_france">GO TO FRANCE</string>
+    <string name="visit_old_enemy_house">VISIT AN OLD ENEMY'S HOUSE</string>
+    <string name="visit_current_enemy_house">VISIT A CURRENT ENEMY'S HOUSE</string>
+    <string name="go_last_ice_cream">GO TO THE LAST PLACE YOU HAD ICE-CREAM</string>
+    <string name="figure_out_life">FIGURE OUT THE MEANING OF LIFE</string>
+    <string name="start_yoga">START DOING YOGA</string>
+    <string name="start_fan_club">START A FAN-CLUB</string>
+    <string name="mind_business">MIND YOUR OWN BUSINESS</string>
+    <string name="learn_language">LEARN A NEW LANGUAGE</string>
+    <string name="drink_more_water">DRINK MORE WATER</string>
+    <string name="develop_understand_cheese">DEVELOP AN UNDERSTANDING FOR CHEESE</string>
+    <string name="ride_horse_beach">RIDE A HORSE THROUGH AN EMPTY BEACH</string>
+    <string name="run_life_depends_on_it">RUN LIKE YOUR LIFE DEPENDED ON IT</string>
 
 </resources>
