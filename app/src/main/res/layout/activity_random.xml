@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@drawable/background_color"
+    android:background="@drawable/text_background"
     >
 
     <TextView
@@ -21,14 +21,15 @@
 
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:background="@drawable/text_background"
+
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+        <!-- android:background="@drawable/text_background" -->
 
     <TextView
         android:id="@+id/suggestedActivity"
@@ -43,9 +44,9 @@
         android:textColor="@color/textColor"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:background="@drawable/text_background"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/youShould" />
@@ -59,9 +60,9 @@
         android:textColor="@color/textColor"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:background="@drawable/text_background"
+
         android:text="WITH"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,9 +81,9 @@
         android:textColor="@color/textColor"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:background="@drawable/text_background"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/with" />
@@ -100,9 +101,9 @@
         android:textColor="@color/textColor"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:background="@drawable/text_background"
+
         android:text="FOR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,12 +122,13 @@
         android:textColor="@color/textColor"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:background="@drawable/text_background"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forDuration" />
+        <!-- android:background="@drawable/text_background" -->
 
     <ImageView
         android:id="@+id/whatNow"

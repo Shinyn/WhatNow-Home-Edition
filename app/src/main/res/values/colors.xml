@@ -10,4 +10,5 @@
     <color name="colorAccent">#111</color>
     <color name="textColor">#03F503</color>
     <color name="darkTextColor">#198D07</color>
+    <color name="red">#720707</color>
 </resources>

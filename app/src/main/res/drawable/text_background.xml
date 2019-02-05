@@ -3,17 +3,18 @@
 
     <gradient
         android:startColor="@color/purple"
-        android:endColor="@color/colorPrimaryDark"
+        android:endColor="@color/red"
         android:angle="180">
     </gradient>
 
+    <!--
     <corners
-        android:topLeftRadius="200dp"
-        android:bottomLeftRadius="200dp"
-        android:bottomRightRadius="200dp"
-        android:topRightRadius="200dp">
+        android:topLeftRadius="30dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:topRightRadius="30dp">
     </corners>
-
+    -->
 
 
 </shape>
