@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        StuffToDo userStuffToDo = new StuffToDo(this);
 
         // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)
         intent = new Intent(this, RandomActivity.class);
@@ -65,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
         intent3 = new Intent(this, RandomActivity.class);
         soWhatNow = findViewById(R.id.whatNowButton);
+
+        // skickar med userStuffToDo och döper den till stuff
+        intent3.putExtra("stuff", userStuffToDo);
+
         soWhatNow.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

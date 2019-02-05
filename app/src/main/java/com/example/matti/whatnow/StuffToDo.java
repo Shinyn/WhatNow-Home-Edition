@@ -2,12 +2,13 @@ package com.example.matti.whatnow;
 
 
 import android.content.Context;
-import android.print.PageRange;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class StuffToDo {
+// implements Serializable - lovar att använda sig av vissa saker (konstruktor, getter, setter)
+// och vi behöver den för att kunna skicka runt vår StuffToDo till olika views.
+public class StuffToDo implements Serializable {
 
     private ArrayList<String> nameSuggestion = new ArrayList<>();
     private ArrayList<String> durationSuggestion = new ArrayList<>();
@@ -22,6 +23,7 @@ public class StuffToDo {
     public StuffToDo() {}
 
     public StuffToDo(Context c ) {
+
         participantsSuggestion.add(c.getString(R.string.hopes_dreams));
         participantsSuggestion.add(c.getString(R.string.your_mom));
         participantsSuggestion.add(c.getString(R.string.no_one));
@@ -35,7 +37,7 @@ public class StuffToDo {
         participantsSuggestion.add(c.getString(R.string.dog_pluto));
         participantsSuggestion.add(c.getString(R.string.delicious_dinner));
         participantsSuggestion.add(c.getString(R.string.saxophone_player));
-        participantsSuggestion.add(c.getString(R.string.willing_animal));
+        participantsSuggestion.add(c.getString(R.string.poodle_rex));
         participantsSuggestion.add(c.getString(R.string.ceo_google));
         participantsSuggestion.add(c.getString(R.string.silverware));
         participantsSuggestion.add(c.getString(R.string.cactus));
@@ -118,8 +120,8 @@ public class StuffToDo {
         nameSuggestion.add(c.getString(R.string.go_witch_hunt));
         nameSuggestion.add(c.getString(R.string.visit_old_tomb));
         nameSuggestion.add(c.getString(R.string.go_to_france));
-        nameSuggestion.add(c.getString(R.string.visit_old_enemy_house));
-        nameSuggestion.add(c.getString(R.string.visit_current_enemy_house));
+        nameSuggestion.add(c.getString(R.string.visit_old_friend));
+        nameSuggestion.add(c.getString(R.string.visit_current_enemy));
         nameSuggestion.add(c.getString(R.string.go_last_ice_cream));
         nameSuggestion.add(c.getString(R.string.figure_out_life));
         nameSuggestion.add(c.getString(R.string.start_yoga));

@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">WhatNow</string>
 
+    <!-- permanent's -->
+    <string name="you_should">YOU SHOULD:</string>
+    <string name="with">WITH:</string>
+    <string name="for_">FOR:</string>
+
     <!-- Aktivity Suggestions -->
     <string name="hopes_dreams">YOUR HOPES AND DREAMS</string>
     <string name="your_mom">YOUR MOM</string>
@@ -15,7 +20,7 @@
     <string name="dog_pluto">A DOG NAMED PLUTO</string>
     <string name="delicious_dinner">YOUR DELICIOUS DINNER</string>
     <string name="saxophone_player">A SAXOPHONE-PLAYER</string>
-    <string name="willing_animal">A WILLING ANIMAL</string>
+    <string name="poodle_rex">A POODLE NAMED REX</string>
     <string name="ceo_google">THE CEO OF GOOGLE</string>
     <string name="silverware">YOUR SILVERWARE</string>
     <string name="cactus">A CACTUS</string>
@@ -85,9 +90,9 @@
     <string name="throw_darts">THROW DARTS</string>
     <string name="work_out">WORK OUT</string>
     <string name="play_ping_pong">PLAY PING PONG</string>
-    <string name="tennis">TENNIS</string>
-    <string name="soccer">SOCCER</string>
-    <string name="video_games">VIDEO GAMES</string>
+    <string name="tennis">PLAY TENNIS</string>
+    <string name="soccer">PLAY SOCCER</string>
+    <string name="video_games">PLAY VIDEO GAMES</string>
     <string name="do_cardio">DO CARDIO</string>
     <string name="cook">COOK</string>
     <string name="help_a_friend">HELP A FRIEND</string>
@@ -103,8 +108,8 @@
     <string name="go_witch_hunt">GO ON A WITCH-HUNT</string>
     <string name="visit_old_tomb">VISIT AN OLD MANS TOMB</string>
     <string name="go_to_france">GO TO FRANCE</string>
-    <string name="visit_old_enemy_house">VISIT AN OLD ENEMY'S HOUSE</string>
-    <string name="visit_current_enemy_house">VISIT A CURRENT ENEMY'S HOUSE</string>
+    <string name="visit_old_friend">VISIT AN OLD FRIEND</string>
+    <string name="visit_current_enemy">VISIT A CURRENT ENEMY</string>
     <string name="go_last_ice_cream">GO TO THE LAST PLACE YOU HAD ICE-CREAM</string>
     <string name="figure_out_life">FIGURE OUT THE MEANING OF LIFE</string>
     <string name="start_yoga">START DOING YOGA</string>
