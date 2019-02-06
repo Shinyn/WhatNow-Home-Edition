@@ -15,7 +15,7 @@ public class RandomActivity extends AppCompatActivity {
        // userStuffToDo = new StuffToDo(this);
 
         //tar emot de vi skickade med från mainActivity och stoppar det i userStuffToDO
-        // vi kallar på den med namet den fick i main - dvs "stuff
+        // vi kallar på den med nament den fick i main - dvs "stuff
         userStuffToDo = (StuffToDo) getIntent().getSerializableExtra("stuff");
         setContentView(R.layout.activity_random);
 
