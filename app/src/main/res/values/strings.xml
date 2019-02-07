@@ -9,7 +9,7 @@
     <string name="edit_button">Edit Activities</string>
     <string name="language_shift">Swedish</string>
 
-    <!-- Aktivity Suggestions -->
+    <!-- Participants Suggestions -->
     <string name="hopes_dreams">YOUR HOPES AND DREAMS</string>
     <string name="your_mom">YOUR MOM</string>
     <string name="no_one">NO ONE</string>
@@ -85,7 +85,7 @@
     <string name="min_teeth_mouth">AS MANY MINUTES AS YOU HAVE TEETH IN YOUR MOUTH</string>
     <string name="toilet_session">A TOILET SESSION</string>
 
-    <!-- Participants Suggestions -->
+    <!-- Activity Suggestions -->
 
     <string name="bowl">BOWL</string>
     <string name="hike">HIKE</string>

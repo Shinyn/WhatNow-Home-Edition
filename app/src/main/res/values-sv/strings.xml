@@ -9,14 +9,14 @@
     <string name="edit_button">Redigera Aktiviteter</string>
     <string name="language_shift">Engelska</string>
 
-    <!-- Aktivity Suggestions -->
+    <!-- Participants Suggestions -->
     <string name="hopes_dreams">DITT HOPP OCH DINA DRÖMMAR</string>
     <string name="your_mom">DIN MAMMA</string>
     <string name="no_one">INGEN</string>
     <string name="your_best_friend">DIN BÄSTA VÄN</string>
     <string name="a_random_hobo">EN SLUMPAD LUFFARE</string>
     <string name="copy_of_bible">ETT EXEMPLAR AV BIBELN</string>
-    <string name="stray_cat">HERRELÖS KATT</string>
+    <string name="stray_cat">EN HERRELÖS KATT</string>
     <string name="someones_grandmother">NÅGONS FARMOR/MORMOR</string>
     <string name="woman_sarah">EN TJEJ MED NAMNET SARAH</string>
     <string name="man_john">EN KILLE MED NAMNET JOHN</string>
@@ -30,8 +30,8 @@
     <string name="vodka">2 FLASKOR VODKA</string>
     <string name="mothers_firstborn">DIN MAMMAS FÖRST-FÖDDA</string>
     <string name="five_people">5 VALFIRA PERSONER</string>
-    <string name="deck_of_cards">ENDAST EN KORTLEK</string>
-    <string name="living_thing">MED NÅGOT LEVANDE</string>
+    <string name="deck_of_cards">EN KORTLEK OCH INGET ANNAT</string>
+    <string name="living_thing">NÅGOT LEVANDE</string>
     <string name="sibling">ETT SYSKON</string>
     <string name="relative">EN SLÄKTING</string>
     <string name="mushrooms">2 KG SVAMP</string>
@@ -40,7 +40,7 @@
     <string name="childhood_toy">DIN KÄRASTE BARNDOMSLEKSAK</string>
     <string name="good_book">DEN GODA BOKEN</string>
     <string name="novel_stephen_king">EN NOVELL AV STEPHEN KING</string>
-    <string name="declaration_independence">SJÄLVSTÄNDIGHETSFÖRKLARINGEN</string>
+    <string name="declaration_independence">SJÄLVSTÄNDIGHETS-FÖRKLARINGEN</string>
     <string name="mona_lisa">MONA-LISA</string>
     <string name="country_flag">DIN LANDSFLAGGA</string>
     <string name="survival_gear">VILKEN ÖVERLEVNADSUTRUSTNING SOM HELST</string>
@@ -54,38 +54,38 @@
     <string name="week">EN VECKA</string>
     <string name="grow_mustache">SÅ LÅNG TID SOM DET TAR ATT ODLA MUSTASCH</string>
     <string name="rest_of_day">RESTEN AV DAGEN</string>
-    <string name="solid_nineteen_half">EN ORDENTLIG 19 OCH EN HALV SEKUND</string>
+    <string name="solid_nineteen_half">ORDENTLIGA 19 OCH EN HALV SEKUND</string>
     <string name="cook_ostridge">TIDEN DET TAR ATT TILLAGA EN STRUTS</string>
     <string name="nano_seconds">3^23 NANO-SEKUNDER</string>
     <string name="pull_ups">SÅ LÅNG TID DET TAR FÖR DIG ATT GÖRA 10 PULL UPS</string>
     <string name="four_bank_days">4 BANK DAGAR</string>
     <string name="forty_eight_min">48 MINUTER</string>
     <string name="sixteen_hours">UNGEFÄR 16 TIMMAR</string>
-    <string name="rest_of_life">RESTEN AV LIVET</string>
+    <string name="rest_of_life">RESTEN AV DITT LIV</string>
     <string name="months_days_hours">2 MÅNADER, 15 DAGAR OCH 3 TIMMAR</string>
     <string name="as_long_as_like">SÅ LÄNGE DU VILL</string>
     <string name="last_week_june">SISTA VECKAN I JUNI</string>
     <string name="two_half_years">2 OCH ETT HALVT ÅR</string>
-    <string name="one_decade">1 ÅRTIONDE</string>
+    <string name="one_decade">ETT ÅRTIONDE</string>
     <string name="days_weeks_xmas">SÅ MÅNGA DAGAR SOM DET VARIT VECKOR SEN JUL</string>
     <string name="forty_two_min_sec">42 MINUTER OCH 9 SEKUNDER</string>
-    <string name="long_want">SÅ LÄNGE DU KÄNNER FÖR DET</string>
+    <string name="long_want">DEN MÅN DU KÄNNER FÖR DET</string>
     <string name="very_long_time">EN VÄLDIGT LÅNG TID</string>
     <string name="fifteen_min">15 MINUTER</string>
     <string name="half_hour">EN HALVTIMME</string>
     <string name="whole_hour">EN HEL TIMME</string>
     <string name="three_quarters_hours">3 FJÄRDEDELAR AV 2 TIMMAR</string>
     <string name="sixteen_twenty_seven">16*27 MINUTER</string>
-    <string name="rest_of_week">RESTEN AV VECKAN</string>
+    <string name="rest_of_week">VECKAN SOM KOMMER</string>
     <string name="seventy_two_hours">72 TIMMAR</string>
-    <string name="youtube_video_load">TIDEN DET TAR FÖR DIN YOUTUBE VIDEO ATT LADDA</string>
-    <string name="tv_commercial">LÄNGDEN PÅ EN TV REKLAM</string>
+    <string name="youtube_video_load">2 MIN.. NEJ, UNDER TIDEN DET TAR FÖR DIN YOUTUBE VIDEO ATT LADDA</string>
+    <string name="tv_commercial">REKLAM PAUSEN</string>
     <string name="two_hours_nine_min">2 TIMMAR OCH 9 MINUTER</string>
     <string name="eleven_leap_years">11 AV DOM DÄR SKOTT-ÅREN</string>
     <string name="min_teeth_mouth">SÅ MÅNGA MINUTER SOM DU HAR TÄNDER I MUNNEN</string>
-    <string name="toilet_session">LÄNGDEN PÅ ETT TOABESÖK</string>
+    <string name="toilet_session">EN HALV.. NEJ TIDEN DET TAR FÖR ETT TOABESÖK</string>
 
-    <!-- Participants Suggestions -->
+    <!-- Activity Suggestions -->
 
     <string name="bowl">BOWLA</string>
     <string name="hike">KAMPA</string>
@@ -96,32 +96,32 @@
     <string name="tennis">SPELA TENNIS</string>
     <string name="soccer">SPELA FOTBOLL</string>
     <string name="video_games">SPELA DATA ELLER TV-SPEL</string>
-    <string name="do_cardio">KONDITIONSTRÄNING</string>
+    <string name="do_cardio">KONDITIONSTRÄNA</string>
     <string name="cook">LAGA MAT</string>
     <string name="help_a_friend">HJÄLPA EN VÄN</string>
     <string name="donate_to_charity">DONERA TILL VÄLGÖRENHET</string>
     <string name="share_wisdom">DELA DIN VISDOM</string>
     <string name="gather_intelligence">SAMLA UPPLYSNINGAR</string>
-    <string name="lower_expectations">SÄNK DINA FÖRVÄNTNINGAR</string>
+    <string name="lower_expectations">SÄNKA DINA FÖRVÄNTNINGAR</string>
     <string name="watch_infinity_war">SE INFINITY WAR</string>
     <string name="get_wasted">SUPA NER DIG</string>
-    <string name="scream_nursing_home">SKRIK IN I ETT ÄLDREBOENDE</string>
-    <string name="learn_juggle">LÄR DIG JONGLERA</string>
+    <string name="scream_nursing_home">SKRIKA IN I ETT ÄLDREBOENDE</string>
+    <string name="learn_juggle">LÄRA DIG JONGLERA</string>
     <string name="undermine_father_wisdom">UNDERMINERA DIN FARS VISDOM</string>
     <string name="go_witch_hunt">GÅ PÅ HÄXJAKT</string>
-    <string name="visit_old_tomb">BESÖK EN GAMMAL MANS GRAV</string>
-    <string name="go_to_france">RES TILL FRANKRIKE</string>
-    <string name="visit_old_friend">BESÖK EN GAMMAL VÄN</string>
-    <string name="visit_current_enemy">BESÖK EN FIENDE</string>
-    <string name="go_last_ice_cream">ÅK TILL DET SENASTE STÄLLE DU ÅT GLASS PÅ</string>
+    <string name="visit_old_tomb">BESÖKA EN GAMMAL MANS GRAV</string>
+    <string name="go_to_france">RESA TILL FRANKRIKE</string>
+    <string name="visit_old_friend">BESÖKA EN GAMMAL VÄN</string>
+    <string name="visit_current_enemy">BESÖKA EN FIENDE</string>
+    <string name="go_last_ice_cream">ÅKA TILL DET SENASTE STÄLLE DU ÅT GLASS PÅ</string>
     <string name="figure_out_life">LISTA UT MENINGEN MED LIVET</string>
     <string name="start_yoga">BÖRJA MED YOGA</string>
     <string name="start_fan_club">STARTA EN FANKLUBB</string>
-    <string name="mind_business">SKÖT DIG SJÄV</string>
-    <string name="learn_language">LÄR DIG ETT NYTT SPRÅK</string>
-    <string name="drink_more_water">DRICK MER VATTEN</string>
+    <string name="mind_business">SKÖTA DIG SJÄV</string>
+    <string name="learn_language">LÄRA DIG ETT NYTT SPRÅK</string>
+    <string name="drink_more_water">DRICKA MER VATTEN</string>
     <string name="develop_understand_cheese">UTVECKLA EN FÖRSTÅELSE FÖR OST</string>
-    <string name="ride_horse_beach">RID EN HÄST IGENOM EN TOM STRAND</string>
-    <string name="run_life_depends_on_it">SPRING SOM OM LIVET VAR PÅ SPEL</string>
+    <string name="ride_horse_beach">RIDA EN HÄST IGENOM EN TOM STRAND</string>
+    <string name="run_life_depends_on_it">SPRINGA SOM OM LIVET STOD PÅ SPEL</string>
 
 </resources>
