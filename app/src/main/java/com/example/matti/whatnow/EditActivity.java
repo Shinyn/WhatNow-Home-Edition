@@ -5,13 +5,12 @@ import android.os.Bundle;
 
 public class EditActivity extends AppCompatActivity {
 
-    //StuffToDo userInput = new StuffToDo();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
+
 
 
 

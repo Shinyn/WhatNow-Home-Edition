@@ -2,13 +2,16 @@ package com.example.matti.whatnow;
 
 
 import android.content.Context;
+import android.util.Log;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
 // implements Serializable - lovar att använda sig av vissa saker (konstruktor, getter, setter)
 // och vi behöver den för att kunna skicka runt vår StuffToDo till olika views.
-public class StuffToDo implements Serializable {
+// implements Serializable
+public class StuffToDo {
 
     private ArrayList<String> nameSuggestion = new ArrayList<>();
     private ArrayList<String> durationSuggestion = new ArrayList<>();
@@ -20,10 +23,14 @@ public class StuffToDo implements Serializable {
     private String duration;
     private String participants;
 
-    public StuffToDo() {}
+    public StuffToDo() {
+        //randomizer = new Random();
+        //Log.d("David", "Random()");
+    }
 
     public StuffToDo(Context c ) {
-
+        //Log.d("David", "Random(c)");
+        //randomizer = new Random();
         participantsSuggestion.add(c.getString(R.string.hopes_dreams));
         participantsSuggestion.add(c.getString(R.string.your_mom));
         participantsSuggestion.add(c.getString(R.string.no_one));
@@ -142,6 +149,8 @@ public class StuffToDo implements Serializable {
     }
 
     public String generateName() {
+        //int ran = randomizer.nextInt(nameSuggestion.size());
+        //Log.d("David", "rand: " + ran);
         this.name = nameSuggestion.get(randomizer.nextInt(nameSuggestion.size()));
         return this.name;
     }

@@ -12,11 +12,7 @@ public class RandomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // userStuffToDo = new StuffToDo(this);
-
-        //tar emot de vi skickade med från mainActivity och stoppar det i userStuffToDO
-        // vi kallar på den med nament den fick i main - dvs "stuff
-        userStuffToDo = (StuffToDo) getIntent().getSerializableExtra("stuff");
+        userStuffToDo = new StuffToDo(this);
         setContentView(R.layout.activity_random);
 
 
