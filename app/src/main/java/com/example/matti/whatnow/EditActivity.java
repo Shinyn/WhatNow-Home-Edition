@@ -2,6 +2,8 @@ package com.example.matti.whatnow;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class EditActivity extends AppCompatActivity {
 
@@ -12,13 +14,13 @@ public class EditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit);
 
 
-
-
+        // Jag behöver tillgång till userStuffToDo i hela appen för att kunna lägga till och ta
+        // bort förslag
 
     }
 
-    /*
 
+    /*
     public void addName(String userNameSuggestion) {
         userInput.addNameSuggestion(userNameSuggestion);
     }

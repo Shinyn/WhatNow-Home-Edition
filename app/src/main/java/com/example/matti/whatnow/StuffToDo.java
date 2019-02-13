@@ -2,11 +2,12 @@ package com.example.matti.whatnow;
 
 
 import android.content.Context;
-import android.util.Log;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
+
+// Behöver en konstruktor?
+enum suggestionType {PARTICIPANTS, NAME, DURATION}
 
 // implements Serializable - lovar att använda sig av vissa saker (konstruktor, getter, setter)
 // och vi behöver den för att kunna skicka runt vår StuffToDo till olika views.
@@ -23,14 +24,9 @@ public class StuffToDo {
     private String duration;
     private String participants;
 
-    public StuffToDo() {
-        //randomizer = new Random();
-        //Log.d("David", "Random()");
-    }
+    public StuffToDo() {}
 
     public StuffToDo(Context c ) {
-        //Log.d("David", "Random(c)");
-        //randomizer = new Random();
         participantsSuggestion.add(c.getString(R.string.hopes_dreams));
         participantsSuggestion.add(c.getString(R.string.your_mom));
         participantsSuggestion.add(c.getString(R.string.no_one));
@@ -149,8 +145,6 @@ public class StuffToDo {
     }
 
     public String generateName() {
-        //int ran = randomizer.nextInt(nameSuggestion.size());
-        //Log.d("David", "rand: " + ran);
         this.name = nameSuggestion.get(randomizer.nextInt(nameSuggestion.size()));
         return this.name;
     }
@@ -165,17 +159,7 @@ public class StuffToDo {
         return this.participants;
     }
 
-    public void addNameSuggestion(String name) {
-        nameSuggestion.add(name);
-    }
 
-    public void addDurationSuggestion(String duration) {
-        durationSuggestion.add(duration);
-    }
-
-    public void addParticipantsSuggestion(String participants) {
-        participantsSuggestion.add(participants);
-    }
 
     public String getName() {
         return name;
@@ -199,5 +183,49 @@ public class StuffToDo {
 
     public ArrayList<String> getParticipantsSuggestion() {
         return participantsSuggestion;
+    }
+
+
+    // Lägger till förslag till listan
+    //
+
+    public void addName(String name) {
+        nameSuggestion.add(name);
+    }
+
+    public void addDuration(String duration) {
+        durationSuggestion.add(duration);
+    }
+
+    public void addParticipants(String participants) {
+        participantsSuggestion.add(participants);
+    }
+
+
+    // Ska ta bort det förbockade förslaget via dess index plats
+    //
+
+    public boolean removeName(int listIndex) {
+        if (this.nameSuggestion.contains(listIndex)) {
+            nameSuggestion.remove(listIndex);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean removeDuration(int listIndex) {
+        if (this.durationSuggestion.contains(listIndex)) {
+            durationSuggestion.remove(listIndex);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean removeParticipants(int listIndex) {
+        if (this.participantsSuggestion.contains(listIndex)) {
+            participantsSuggestion.remove(listIndex);
+            return true;
+        }
+        return false;
     }
 }

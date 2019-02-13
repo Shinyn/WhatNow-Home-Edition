@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)
         intent = new Intent(this, RandomActivity.class);
         //intent.putExtra("list", userStuffToDo)

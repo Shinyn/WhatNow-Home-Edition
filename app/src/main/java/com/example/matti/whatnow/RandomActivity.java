@@ -19,7 +19,6 @@ public class RandomActivity extends AppCompatActivity {
 
 
 
-
         TextView suggestedActivity = findViewById(R.id.suggestedActivity);
         suggestedActivity.setText(userStuffToDo.generateName());
 
@@ -28,9 +27,6 @@ public class RandomActivity extends AppCompatActivity {
 
         TextView suggestedDuration = findViewById(R.id.actualDuration);
         suggestedDuration.setText(userStuffToDo.generateDuration());
-
-
-
 
 
     }
