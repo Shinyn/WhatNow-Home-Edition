@@ -6,14 +6,18 @@ import android.widget.TextView;
 
 public class RandomActivity extends AppCompatActivity {
 
+    //ska skicka med intent från main - dvs userstufftodo så alla views kommer åt den
     public StuffToDo userStuffToDo;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //String ustd = getIntent().getStringExtra("list");
         userStuffToDo = new StuffToDo(this);
         setContentView(R.layout.activity_random);
+
+
 
 
         TextView suggestedActivity = findViewById(R.id.suggestedActivity);

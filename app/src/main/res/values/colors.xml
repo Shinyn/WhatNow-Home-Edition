@@ -11,4 +11,6 @@
     <color name="textColor">#03F503</color>
     <color name="darkTextColor">#198D07</color>
     <color name="red">#720707</color>
+    <color name="dark_blue">#021866</color>
+    <color name="turquoise">#08584A</color>
 </resources>

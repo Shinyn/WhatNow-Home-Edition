@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@drawable/background_color">
+    android:background="@drawable/edit_background_color">
 
     <Button
         android:id="@+id/addName"

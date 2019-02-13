@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //public StuffToDo userStuffToDo;
     ImageView whatNow;
     Button edit;
     Button soWhatNow;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)
         intent = new Intent(this, RandomActivity.class);
+        //intent.putExtra("list", userStuffToDo)
         whatNow = findViewById(R.id.whatNow);
         whatNow.setImageResource(R.drawable.whatnow);
         whatNow.setOnTouchListener(new View.OnTouchListener() {
@@ -79,6 +81,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 }
