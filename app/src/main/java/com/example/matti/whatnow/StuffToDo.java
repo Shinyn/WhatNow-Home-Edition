@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.Random;
 
 // Behöver en konstruktor?
-enum suggestionType {PARTICIPANTS, NAME, DURATION}
+//enum suggestionType {PARTICIPANTS, NAME, DURATION}
 
 // implements Serializable - lovar att använda sig av vissa saker (konstruktor, getter, setter)
 // och vi behöver den för att kunna skicka runt vår StuffToDo till olika views.
 // implements Serializable
-public class StuffToDo {
+public class StuffToDo implements Serializable{
 
     private ArrayList<String> nameSuggestion = new ArrayList<>();
     private ArrayList<String> durationSuggestion = new ArrayList<>();

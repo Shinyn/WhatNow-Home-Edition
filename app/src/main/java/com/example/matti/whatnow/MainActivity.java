@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     //public StuffToDo userStuffToDo;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Intent intent;
     Intent intent2;
     Intent intent3;
+    StuffToDo userStuffToDo;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -25,13 +27,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        userStuffToDo = new StuffToDo(this);
 
-
+        /*
+        if (userStuffToDo == null) {
+            userStuffToDo = new StuffToDo(this);
+        } */
 
 
         // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)
         intent = new Intent(this, RandomActivity.class);
-        //intent.putExtra("list", userStuffToDo)
+        intent.putExtra("list", userStuffToDo);
+
         whatNow = findViewById(R.id.whatNow);
         whatNow.setImageResource(R.drawable.whatnow);
         whatNow.setOnTouchListener(new View.OnTouchListener() {
@@ -50,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         intent2 = new Intent(this, EditActivity.class);
+        intent2.putExtra("list", userStuffToDo);
         edit = findViewById(R.id.edit);
         edit.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -67,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         intent3 = new Intent(this, RandomActivity.class);
+        intent3.putExtra("list", userStuffToDo);
         soWhatNow = findViewById(R.id.whatNowButton);
         soWhatNow.setOnTouchListener(new View.OnTouchListener() {
             @Override

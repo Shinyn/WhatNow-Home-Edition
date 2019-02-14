@@ -2,21 +2,66 @@ package com.example.matti.whatnow;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class EditActivity extends AppCompatActivity {
 
+    StuffToDo ustd = (StuffToDo) getIntent().getSerializableExtra("list");
+    RadioButton radioButton;
+    RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
+        radioGroup = findViewById(R.id.radioGroup);
+        Button addSuggestion = findViewById(R.id.addSuggestion);
+        addSuggestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                radioButton = findViewById(radioId);
+                if(radioId == R.id.radioBtn1) {
+                    EditText name = findViewById(R.id.editText);
+                    String text = name.getText().toString();
+                    ustd.addName(text);
+                } else if (radioId == R.id.radioBtn2) {
+                    EditText participants = findViewById(R.id.editText);
+                    String text = participants.getText().toString();
+                    ustd.addParticipants(text);
+                } else if (radioId == R.id.radioBtn3) {
+                    EditText duration = findViewById(R.id.editText);
+                    String text = duration.getText().toString();
+                    ustd.addDuration(text);
+                }  // Inte findViewById utan bara R.id.deDuSöker då vi vill jämföra ett id med ett
+                   // id och inte ett id med en view då det inte går.
+            }
+        });
 
-        // Jag behöver tillgång till userStuffToDo i hela appen för att kunna lägga till och ta
-        // bort förslag
 
+
+
+        //Listview visas
+
+
+
+
+    }
+
+    public void remove() {
+        ustd.removeName(1);
+        ustd.removeDuration(2);
+        ustd.removeParticipants(3);
+    }
+
+    public void checkButton() {
+        int radioId = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(radioId);
     }
 
 
