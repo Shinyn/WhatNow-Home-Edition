@@ -19,7 +19,7 @@ public class StuffToDo implements Serializable{
     private ArrayList<String> participantsSuggestion = new ArrayList<>();
 
 
-    private Random randomizer = new Random();
+    private static Random randomizer = new Random();
     private String name;
     private String duration;
     private String participants;

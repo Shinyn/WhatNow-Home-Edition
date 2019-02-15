@@ -1,5 +1,6 @@
 package com.example.matti.whatnow;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.RadioGroup;
 
 public class EditActivity extends AppCompatActivity {
 
-    StuffToDo ustd = (StuffToDo) getIntent().getSerializableExtra("list");
+    StuffToDo ustd;
     RadioButton radioButton;
     RadioGroup radioGroup;
 
@@ -18,6 +19,7 @@ public class EditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
+        ustd = (StuffToDo) getIntent().getSerializableExtra("list");
 
         radioGroup = findViewById(R.id.radioGroup);
         Button addSuggestion = findViewById(R.id.addSuggestion);
@@ -59,7 +61,10 @@ public class EditActivity extends AppCompatActivity {
         ustd.removeParticipants(3);
     }
 
-    public void checkButton() {
+    public void checkButton(View v) { //Fungerar inte - krashar utan intent och view men får nån bugg med dom.
+        Intent intent = new Intent(this, EditActivity.class);
+        startActivity(intent);
+
         int radioId = radioGroup.getCheckedRadioButtonId();
         radioButton = findViewById(radioId);
     }

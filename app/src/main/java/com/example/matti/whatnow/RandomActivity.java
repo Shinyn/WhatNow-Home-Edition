@@ -13,6 +13,7 @@ public class RandomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_random);
 
         // Tar in extra från main och säger att den vi tar in är en StuffToDo och lägger den i en
         // ny StuffToDo
@@ -21,7 +22,7 @@ public class RandomActivity extends AppCompatActivity {
 
         //Äldre versionen
         //userStuffToDo = new StuffToDo(this);
-        setContentView(R.layout.activity_random);
+
 
 
         TextView suggestedActivity = findViewById(R.id.suggestedActivity);
