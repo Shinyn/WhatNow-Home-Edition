@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Intent intent2;
     Intent intent3;
     StuffToDo userStuffToDo;
+    StuffToDo updatedList;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        updatedList = (StuffToDo) getIntent().getSerializableExtra("updatedList");
         userStuffToDo = new StuffToDo(this);
 
         /*
