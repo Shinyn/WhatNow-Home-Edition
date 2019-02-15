@@ -17,7 +17,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Add your own suggestions"
+        android:hint="@string/add_your_own_suggestions"
         app:layout_constraintBottom_toTopOf="@+id/addSuggestion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listView" />
@@ -33,7 +33,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_shape"
-        android:text="Add activity"
+        android:text="@string/add_activity"
         android:textColor="@color/textColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -68,21 +68,21 @@
             android:layout_height="wrap_content"
             android:onClick="checkButton"
             android:checked="true"
-            android:text="Activity Name" />
+            android:text="@string/activity_name" />
 
         <RadioButton
             android:id="@+id/radioBtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"
-            android:text="Participants" />
+            android:text="@string/participants" />
 
         <RadioButton
             android:id="@+id/radioBtn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"
-            android:text="Duration" />
+            android:text="@string/duration" />
 
 
     </RadioGroup>

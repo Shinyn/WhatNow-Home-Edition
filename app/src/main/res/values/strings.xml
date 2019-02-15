@@ -8,6 +8,11 @@
     <string name="what_now_button">What Now?</string>
     <string name="edit_button">Edit Activities</string>
     <string name="language_shift">Swedish</string>
+    <string name="add_activity">Add Activity</string>
+    <string name="activity_name">Activity Name</string>
+    <string name="participants">Participants</string>
+    <string name="duration">Duration</string>
+    <string name="add_your_own_suggestions">Add your own suggestions</string>
 
     <!-- Participants Suggestions -->
     <string name="hopes_dreams">YOUR HOPES AND DREAMS</string>

@@ -1,6 +1,5 @@
 package com.example.matti.whatnow;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -61,28 +60,13 @@ public class EditActivity extends AppCompatActivity {
         ustd.removeParticipants(3);
     }
 
-    public void checkButton(View v) { //Fungerar inte - krashar utan intent och view men får nån bugg med dom.
-        Intent intent = new Intent(this, EditActivity.class);
-        startActivity(intent);
-
+    public void checkButton(View v) {
         int radioId = radioGroup.getCheckedRadioButtonId();
         radioButton = findViewById(radioId);
     }
 
 
     /*
-    public void addName(String userNameSuggestion) {
-        userInput.addNameSuggestion(userNameSuggestion);
-    }
-
-    public void addParticipants(String userParticipantsSuggestion) {
-        userInput.addParticipantsSuggestion(userParticipantsSuggestion);
-    }
-
-    public void addDuration(String userDurationSuggestion) {
-        userInput.addDurationSuggestion(userDurationSuggestion);
-    }
-
     public void removeNameActivity() {
         for (int i = 0; i < userInput.getNameSuggestion().size(); i++);
         userInput.getName();
