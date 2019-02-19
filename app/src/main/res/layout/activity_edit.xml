@@ -13,14 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/add_your_own_suggestions"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/addSuggestion"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/addSuggestion"
@@ -40,10 +38,9 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-
     <ListView
         android:id="@+id/listView"
-        android:layout_width="395dp"
+        android:layout_width="0dp"
         android:layout_height="603dp"
         android:layout_marginBottom="8dp"
         android:scrollbars="horizontal"
