@@ -7,11 +7,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 // Behöver en konstruktor?
-//enum suggestionType {PARTICIPANTS, NAME, DURATION}
 
 // implements Serializable - lovar att använda sig av vissa saker (konstruktor, getter, setter)
 // och vi behöver den för att kunna skicka runt vår StuffToDo till olika views.
-// implements Serializable
+
 public class StuffToDo implements Serializable{
 
     private ArrayList<String> nameSuggestion = new ArrayList<>();
@@ -25,6 +24,7 @@ public class StuffToDo implements Serializable{
     private String participants;
 
 
+    // Förslag som finns med när appen startas
     public StuffToDo(Context c ) {
         participantsSuggestion.add(c.getString(R.string.hopes_dreams));
         participantsSuggestion.add(c.getString(R.string.your_mom));
@@ -138,14 +138,11 @@ public class StuffToDo implements Serializable{
     }
 
 
+    // Randomiserar fram aktivitetsNamn, deltagare och varaktighet
+    //
     public String generateName() {
         this.name = nameSuggestion.get(randomizer.nextInt(nameSuggestion.size()));
         return this.name;
-    }
-
-    public String generateDuration() {
-        this.duration = durationSuggestion.get(randomizer.nextInt(durationSuggestion.size()));
-        return this.duration;
     }
 
     public String generateParticipants() {
@@ -153,18 +150,9 @@ public class StuffToDo implements Serializable{
         return this.participants;
     }
 
-
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDuration() {
-        return duration;
-    }
-
-    public String getParticipants() {
-        return participants;
+    public String generateDuration() {
+        this.duration = durationSuggestion.get(randomizer.nextInt(durationSuggestion.size()));
+        return this.duration;
     }
 
     // Hämtar listan med namnförslag
@@ -195,33 +183,5 @@ public class StuffToDo implements Serializable{
 
     public void addParticipants(String participants) {
         participantsSuggestion.add(participants);
-    }
-
-
-    // Ska ta bort det förbockade förslaget via dess index plats
-    //
-
-    public boolean removeName(int listIndex) {
-        if (this.nameSuggestion.contains(listIndex)) {
-            nameSuggestion.remove(listIndex);
-            return true;
-        }
-        return false;
-    }
-
-    public boolean removeDuration(int listIndex) {
-        if (this.durationSuggestion.contains(listIndex)) {
-            durationSuggestion.remove(listIndex);
-            return true;
-        }
-        return false;
-    }
-
-    public boolean removeParticipants(int listIndex) {
-        if (this.participantsSuggestion.contains(listIndex)) {
-            participantsSuggestion.remove(listIndex);
-            return true;
-        }
-        return false;
     }
 }

@@ -28,14 +28,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         updatedList = (StuffToDo) getIntent().getSerializableExtra("updatedList");
-        userStuffToDo = new StuffToDo(this);
 
-        /*
-        if (userStuffToDo == null) {
+        if (updatedList == null) {
             userStuffToDo = new StuffToDo(this);
-        } */
+        } else {
+            userStuffToDo = updatedList;
+        }
+
+
+        // Innan ändring
+        //updatedList = (StuffToDo) getIntent().getSerializableExtra("updatedList");
+        //userStuffToDo = new StuffToDo(this);
+
 
 
         // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)

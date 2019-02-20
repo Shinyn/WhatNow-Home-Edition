@@ -126,13 +126,13 @@ public class EditActivity extends AppCompatActivity {
     }
 
 
-    // Håller koll på den radioknapp som är aktiverad
+    // Håller koll på den radioknapp som är aktiverad.
     public void checkButton(View v) {
         int radioId = radioGroup.getCheckedRadioButtonId();
         radioButton = findViewById(radioId);
     }
 
-    // Senast här. Ska va: @Override onBackPressed
+    // Overridar tillbaka knappen så att main får den uppdaterade listan.
     @Override
     public void onBackPressed() {
         intent = new Intent(this, MainActivity.class);
