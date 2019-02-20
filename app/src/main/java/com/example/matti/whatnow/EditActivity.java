@@ -40,7 +40,6 @@ public class EditActivity extends AppCompatActivity {
         final MyAdapter adapter = new MyAdapter(this, ustd);
         nameListView.setAdapter(adapter);
 
-        //ListView listView = findViewById(R.id.listView);
         nameListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -71,7 +70,6 @@ public class EditActivity extends AppCompatActivity {
             }
         });
 
-
         radioGroup = findViewById(R.id.radioGroup);
         Button addSuggestion = findViewById(R.id.addSuggestion);
         addSuggestion.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +91,6 @@ public class EditActivity extends AppCompatActivity {
                     ustd.addParticipants(text);
                     participants.setText("");
                     adapter.notifyDataSetChanged();
-
                     toast();
 
                 } else if (radioId == R.id.radioBtn3) {
@@ -102,29 +99,13 @@ public class EditActivity extends AppCompatActivity {
                     ustd.addDuration(text);
                     duration.setText("");
                     adapter.notifyDataSetChanged();
-
                     toast();
 
                 }  // Inte findViewById utan bara R.id.deDuSöker då vi vill jämföra ett id med ett
                    // id och inte ett id med en view då det inte går.
             }
         });
-
-
-
-
-        //Listview visas
-
-
-
-
     }
-
-    public void remove(View v) {
-        Log.d("funkar", "knappen klickad");
-
-    }
-
 
     // Håller koll på den radioknapp som är aktiverad.
     public void checkButton(View v) {
@@ -140,7 +121,6 @@ public class EditActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     // Visar en Toast när en aktivitet lagts till (FUNKAR)
     public void toast() {
         context = getApplicationContext();
@@ -149,9 +129,4 @@ public class EditActivity extends AppCompatActivity {
         toast = Toast.makeText(context, text, duration);
         toast.show();
     }
-
-    //@Override
-    //public void onBackPressed() {
-    //
-    //}
 }

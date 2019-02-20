@@ -58,10 +58,8 @@ public class MyAdapter extends ArrayAdapter {
                     - suggestions.getParticipantsSuggestion().size());
             txtView.setText(duration);
         }
-
         return listItem;
     }
-
 
     @Override
     public int getCount() {
@@ -69,6 +67,5 @@ public class MyAdapter extends ArrayAdapter {
         return suggestions.getNameSuggestion().size() +
                 suggestions.getDurationSuggestion().size() +
                 suggestions.getParticipantsSuggestion().size();
-
     }
 }

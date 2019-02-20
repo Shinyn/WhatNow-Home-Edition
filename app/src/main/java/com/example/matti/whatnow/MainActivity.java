@@ -12,7 +12,6 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //public StuffToDo userStuffToDo;
     ImageView whatNow;
     Button edit;
     Button soWhatNow;
@@ -28,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Kollar om updatedList finns och om den finns så uppdateras
+        // StuffToDo annars skapas ett nytt StuffToDo
+
         updatedList = (StuffToDo) getIntent().getSerializableExtra("updatedList");
 
         if (updatedList == null) {
@@ -36,14 +38,8 @@ public class MainActivity extends AppCompatActivity {
             userStuffToDo = updatedList;
         }
 
-
-        // Innan ändring
-        //updatedList = (StuffToDo) getIntent().getSerializableExtra("updatedList");
-        //userStuffToDo = new StuffToDo(this);
-
-
-
         // Intentet är att ta sig från MainActivity (this) till RandomActivity (RandomActivity.class)
+        // OnTouch så byter man view till Random (bild)
         intent = new Intent(this, RandomActivity.class);
         intent.putExtra("list", userStuffToDo);
 
@@ -64,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // OnTouch så byter man view till Edit
         intent2 = new Intent(this, EditActivity.class);
         intent2.putExtra("list", userStuffToDo);
         edit = findViewById(R.id.edit);
@@ -82,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // OnTouch så byter man view till Random
         intent3 = new Intent(this, RandomActivity.class);
         intent3.putExtra("list", userStuffToDo);
         soWhatNow = findViewById(R.id.whatNowButton);

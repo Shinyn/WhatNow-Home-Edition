@@ -1,12 +1,10 @@
 package com.example.matti.whatnow;
 
-
 import android.content.Context;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
-// Behöver en konstruktor?
 
 // implements Serializable - lovar att använda sig av vissa saker (konstruktor, getter, setter)
 // och vi behöver den för att kunna skicka runt vår StuffToDo till olika views.
@@ -17,7 +15,7 @@ public class StuffToDo implements Serializable{
     private ArrayList<String> durationSuggestion = new ArrayList<>();
     private ArrayList<String> participantsSuggestion = new ArrayList<>();
 
-
+    // Random behöver va static för att slumpa fram nytt
     private static Random randomizer = new Random();
     private String name;
     private String duration;

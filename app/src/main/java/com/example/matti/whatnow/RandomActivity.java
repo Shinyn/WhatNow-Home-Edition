@@ -6,10 +6,6 @@ import android.widget.TextView;
 
 public class RandomActivity extends AppCompatActivity {
 
-    //ska skicka med intent från main - dvs userstufftodo så alla views kommer åt den
-    //public StuffToDo userStuffToDo;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +15,6 @@ public class RandomActivity extends AppCompatActivity {
         // ny StuffToDo
         StuffToDo ustd = (StuffToDo) getIntent().getSerializableExtra("list");
 
-
-        //Äldre versionen
-        //userStuffToDo = new StuffToDo(this);
-
-
-
         TextView suggestedActivity = findViewById(R.id.suggestedActivity);
         suggestedActivity.setText(ustd.generateName());
 
@@ -33,7 +23,5 @@ public class RandomActivity extends AppCompatActivity {
 
         TextView suggestedDuration = findViewById(R.id.actualDuration);
         suggestedDuration.setText(ustd.generateDuration());
-
-
     }
 }

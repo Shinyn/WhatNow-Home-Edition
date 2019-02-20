@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/what_now_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RemoveActivity"
-            android:screenOrientation="sensorPortrait"></activity>
+
         <activity android:name=".EditActivity"
             android:screenOrientation="sensorPortrait"/>
         <activity android:name=".RandomActivity"
@@ -27,7 +26,7 @@
 
 </manifest>
 
-<!-- La till screenOrientation sensorPortrait på rad 13, 15, 17, 19.
+<!-- La till screenOrientation sensorPortrait.
      Portrait funkar men inte sensorPortrait -->
 <!-- Ändrade ikonen, nu finns det tre versioner, androids basic icon, svart text på grön bakgrund
      ikon och en egen bild ikon-->
