@@ -41,17 +41,20 @@ public class MyAdapter extends ArrayAdapter {
             txtView.setText(name);
 
         } else if (position >= suggestions.getNameSuggestion().size() &&
-                position < suggestions.getParticipantsSuggestion().size() + suggestions.getNameSuggestion().size()) {
+                position < suggestions.getParticipantsSuggestion().size()
+                        + suggestions.getNameSuggestion().size()) {
 
             ArrayList<String> participants = suggestions.getParticipantsSuggestion();
-            String participant = participants.get(position - suggestions.getNameSuggestion().size() );
+            String participant = participants.get(position
+                    - suggestions.getNameSuggestion().size() );
             txtView.setText(participant);
 
         } else if (position >= suggestions.getNameSuggestion().size() +
                 suggestions.getParticipantsSuggestion().size()){
 
             ArrayList<String> durations = suggestions.getDurationSuggestion();
-            String duration = durations.get(position - suggestions.getNameSuggestion().size()
+            String duration = durations.get(position
+                    - suggestions.getNameSuggestion().size()
                     - suggestions.getParticipantsSuggestion().size());
             txtView.setText(duration);
         }

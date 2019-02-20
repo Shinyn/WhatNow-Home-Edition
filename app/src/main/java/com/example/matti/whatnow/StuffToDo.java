@@ -167,6 +167,8 @@ public class StuffToDo implements Serializable{
         return participants;
     }
 
+    // Hämtar listan med namnförslag
+    //
     public ArrayList<String> getNameSuggestion() {
         return nameSuggestion;
     }
@@ -222,17 +224,4 @@ public class StuffToDo implements Serializable{
         }
         return false;
     }
-
-    /*
-    public void printAllLists() {
-        for (int i = 0; i < nameSuggestion.size(); i++) {
-            nameSuggestion.get(i);
-        }
-
-
-
-        getNameSuggestion().indexOf(i);
-        getParticipantsSuggestion();
-        getDurationSuggestion();
-    } */
 }

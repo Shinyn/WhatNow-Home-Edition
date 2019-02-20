@@ -2,10 +2,12 @@ package com.example.matti.whatnow;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +16,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EditActivity extends AppCompatActivity {
@@ -37,7 +40,36 @@ public class EditActivity extends AppCompatActivity {
         final MyAdapter adapter = new MyAdapter(this, ustd);
         nameListView.setAdapter(adapter);
 
+        //ListView listView = findViewById(R.id.listView);
+        nameListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                if (position < ustd.getNameSuggestion().size()) {
+                    ArrayList<String> names = ustd.getNameSuggestion();
+                    names.remove(position);
+                    adapter.notifyDataSetChanged();
+
+                } else if (position >= ustd.getNameSuggestion().size() &&
+                        position < ustd.getParticipantsSuggestion().size()
+                    + ustd.getNameSuggestion().size()) {
+
+                    ArrayList<String> participants = ustd.getParticipantsSuggestion();
+                    participants.remove(position - ustd.getNameSuggestion().size());
+                    adapter.notifyDataSetChanged();
+
+                } else if (position >= ustd.getNameSuggestion().size() +
+                        ustd.getParticipantsSuggestion().size()) {
+
+                    ArrayList<String> durations = ustd.getDurationSuggestion();
+                    durations.remove(position
+                            - ustd.getNameSuggestion().size()
+                            - ustd.getParticipantsSuggestion().size());
+                    adapter.notifyDataSetChanged();
+                }
+
+            }
+        });
 
 
         radioGroup = findViewById(R.id.radioGroup);
