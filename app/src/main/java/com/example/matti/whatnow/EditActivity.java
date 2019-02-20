@@ -83,9 +83,7 @@ public class EditActivity extends AppCompatActivity {
     }
 
     public void remove() {
-        ustd.removeName(1);
-        ustd.removeDuration(2);
-        ustd.removeParticipants(3);
+
     }
 
 
