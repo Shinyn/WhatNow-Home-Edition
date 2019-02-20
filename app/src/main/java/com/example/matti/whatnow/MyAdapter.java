@@ -62,7 +62,6 @@ public class MyAdapter extends ArrayAdapter {
 
     @Override
     public int getCount() {
-        //return super.getCount();
 
         return suggestions.getNameSuggestion().size() +
                 suggestions.getDurationSuggestion().size() +

@@ -24,7 +24,6 @@ public class StuffToDo implements Serializable{
     private String duration;
     private String participants;
 
-    public StuffToDo() {}
 
     public StuffToDo(Context c ) {
         participantsSuggestion.add(c.getString(R.string.hopes_dreams));
@@ -138,11 +137,6 @@ public class StuffToDo implements Serializable{
 
     }
 
-    public void generate() {
-        this.name = nameSuggestion.get(randomizer.nextInt(nameSuggestion.size()));
-        this.duration = durationSuggestion.get(randomizer.nextInt(durationSuggestion.size()));
-        this.participants = participantsSuggestion.get(randomizer.nextInt(participantsSuggestion.size()));
-    }
 
     public String generateName() {
         this.name = nameSuggestion.get(randomizer.nextInt(nameSuggestion.size()));

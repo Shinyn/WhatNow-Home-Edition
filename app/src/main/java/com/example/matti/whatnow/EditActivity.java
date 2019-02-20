@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -33,7 +34,7 @@ public class EditActivity extends AppCompatActivity {
 
         ustd = (StuffToDo) getIntent().getSerializableExtra("list");
         ListView nameListView = findViewById(R.id.listView);
-        MyAdapter adapter = new MyAdapter(this, ustd);
+        final MyAdapter adapter = new MyAdapter(this, ustd);
         nameListView.setAdapter(adapter);
 
 
@@ -51,6 +52,7 @@ public class EditActivity extends AppCompatActivity {
                     String text = name.getText().toString();
                     ustd.addName(text);
                     name.setText("");
+                    adapter.notifyDataSetChanged();
                     toast();
 
                 } else if (radioId == R.id.radioBtn2) {
@@ -58,6 +60,8 @@ public class EditActivity extends AppCompatActivity {
                     String text = participants.getText().toString();
                     ustd.addParticipants(text);
                     participants.setText("");
+                    adapter.notifyDataSetChanged();
+
                     toast();
 
                 } else if (radioId == R.id.radioBtn3) {
@@ -65,6 +69,8 @@ public class EditActivity extends AppCompatActivity {
                     String text = duration.getText().toString();
                     ustd.addDuration(text);
                     duration.setText("");
+                    adapter.notifyDataSetChanged();
+
                     toast();
 
                 }  // Inte findViewById utan bara R.id.deDuSöker då vi vill jämföra ett id med ett
@@ -82,19 +88,21 @@ public class EditActivity extends AppCompatActivity {
 
     }
 
-    public void remove() {
+    public void remove(View v) {
+        Log.d("funkar", "knappen klickad");
 
     }
 
 
-    //
+    // Håller koll på den radioknapp som är aktiverad
     public void checkButton(View v) {
         int radioId = radioGroup.getCheckedRadioButtonId();
         radioButton = findViewById(radioId);
     }
 
-    // senast här
-    public void goToMainActivity() {
+    // Senast här. Ska va: @Override onBackPressed
+    @Override
+    public void onBackPressed() {
         intent = new Intent(this, MainActivity.class);
         intent.putExtra("updatedList", ustd);
         startActivity(intent);
@@ -114,12 +122,4 @@ public class EditActivity extends AppCompatActivity {
     //public void onBackPressed() {
     //
     //}
-
-
-    /*
-    public void removeNameActivity() {
-        for (int i = 0; i < userInput.getNameSuggestion().size(); i++);
-        userInput.getName();
-        //Loopa igenom listan och skriva ut innehållet till ListView
-    } */
 }
