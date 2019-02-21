@@ -83,12 +83,12 @@
     <string name="sixteen_twenty_seven">16*27 MINUTER</string>
     <string name="rest_of_week">VECKAN SOM KOMMER</string>
     <string name="seventy_two_hours">72 TIMMAR</string>
-    <string name="youtube_video_load">2 MIN.. NEJ, UNDER TIDEN DET TAR FÖR DIN YOUTUBE VIDEO ATT LADDA</string>
+    <string name="youtube_video_load">2 MIN + TIDEN DET TAR FÖR DIN YOUTUBE VIDEO ATT LADDA</string>
     <string name="tv_commercial">REKLAM PAUSEN</string>
     <string name="two_hours_nine_min">2 TIMMAR OCH 9 MINUTER</string>
     <string name="eleven_leap_years">11 AV DOM DÄR SKOTT-ÅREN</string>
     <string name="min_teeth_mouth">SÅ MÅNGA MINUTER SOM DU HAR TÄNDER I MUNNEN</string>
-    <string name="toilet_session">EN HALV.. NEJ TIDEN DET TAR FÖR ETT TOABESÖK</string>
+    <string name="toilet_session">EN HALV MINUT + TIDEN DET TAR FÖR ETT TOABESÖK</string>
 
     <!-- Activity Suggestions -->
 
