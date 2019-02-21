@@ -18,6 +18,9 @@ public class RandomActivity extends AppCompatActivity {
         // ny StuffToDo
         ustd = (StuffToDo) getIntent().getSerializableExtra("list");
 
+
+        //Slumpar fram aktiviteter från dom 3 arrayerna
+        //
         TextView suggestedActivity = findViewById(R.id.suggestedActivity);
         suggestedActivity.setText(ustd.generateName());
 

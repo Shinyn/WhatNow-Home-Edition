@@ -1,6 +1,7 @@
 package com.example.matti.whatnow;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
     Intent intent3;
     StuffToDo userStuffToDo;
     StuffToDo updatedList;
+    Context context1;
+    Toast toast1;
+    CharSequence text1;
+    int duration1;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -97,5 +103,13 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    public void tyUser(View v) {
+        context1 = getApplicationContext();
+        text1 = "(-.-)-.-)(-.(-.(-.-).-).-) (-.-).-)(-.-)";
+        duration1 = Toast.LENGTH_SHORT;
+        toast1 = Toast.makeText(context1, text1, duration1);
+        toast1.show();
     }
 }
