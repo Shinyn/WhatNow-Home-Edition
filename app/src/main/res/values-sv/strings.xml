@@ -12,7 +12,7 @@
     <string name="activity_name">Aktivitets Namn</string>
     <string name="participants">Deltagare</string>
     <string name="duration">Varaktighet</string>
-    <string name="add_your_own_suggestions">Lägg till egna förslag</string>
+    <string name="add_your_own_suggestions">Skriv in förslag...</string>
 
     <!-- Participants Suggestions -->
     <string name="hopes_dreams">DITT HOPP OCH DINA DRÖMMAR</string>

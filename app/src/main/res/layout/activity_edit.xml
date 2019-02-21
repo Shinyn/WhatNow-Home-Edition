@@ -16,6 +16,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/add_your_own_suggestions"
+        android:textColorHint="@color/somethingDark"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/addSuggestion"
         app:layout_constraintStart_toStartOf="parent" />
@@ -62,6 +63,9 @@
 
         <RadioButton
             android:id="@+id/radioBtn1"
+
+            android:buttonTint="@color/textColor"
+            android:textColor="@color/textColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"
@@ -70,6 +74,8 @@
 
         <RadioButton
             android:id="@+id/radioBtn2"
+            android:buttonTint="@color/textColor"
+            android:textColor="@color/textColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"
@@ -77,6 +83,9 @@
 
         <RadioButton
             android:id="@+id/radioBtn3"
+
+            android:buttonTint="@color/textColor"
+            android:textColor="@color/textColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkButton"

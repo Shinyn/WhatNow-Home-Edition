@@ -9,8 +9,9 @@
     <color name="colorPrimaryDark">#000</color>
     <color name="colorAccent">#111</color>
     <color name="textColor">#03F503</color>
-    <color name="darkTextColor">#198D07</color>
+    <color name="darkTextColor">#0F6103</color>
     <color name="red">#720707</color>
     <color name="dark_blue">#021866</color>
     <color name="turquoise">#08584A</color>
+    <color name="somethingDark">#11882C</color>
 </resources>

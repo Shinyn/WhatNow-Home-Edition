@@ -12,7 +12,7 @@
     <string name="activity_name">Activity Name</string>
     <string name="participants">Participants</string>
     <string name="duration">Duration</string>
-    <string name="add_your_own_suggestions">Add your own suggestions</string>
+    <string name="add_your_own_suggestions">Add suggestions...</string>
 
     <!-- Participants Suggestions -->
     <string name="hopes_dreams">YOUR HOPES AND DREAMS</string>
