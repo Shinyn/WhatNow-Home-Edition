@@ -16,6 +16,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/add_your_own_suggestions"
+        android:textColor="@color/textColor"
         android:textColorHint="@color/somethingDark"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/addSuggestion"
